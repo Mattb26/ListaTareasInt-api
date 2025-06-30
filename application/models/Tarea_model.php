@@ -15,7 +15,7 @@ class Tarea_model extends CI_Model {
         return $this->db->get($this->table)->result();
     }
 
-    // Obtener tarea por ID
+    // Identificar tarea por ID
     public function get($id) {
         return $this->db->get_where($this->table, ['id' => $id])->row();
     }
